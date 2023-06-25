@@ -1,5 +1,7 @@
 hecho por Hector Barrios.
 
+CRUD
+
 Soy progrmador en PHP, PYTHON, JavaScript, MySQL, CSS y HTML y conozco los comandos basicos de GIT
 
 Proyecto de PHP CREATE, READ, UPDATE y DELETE -->
