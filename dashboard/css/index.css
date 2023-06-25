@@ -1,0 +1,57 @@
+/**
+ *   estilo para todo dentro de la carpeta dashboard
+ *
+ *  aplique poco CSS porque no es el objetivo de este
+ *  proyecto
+*/
+
+h1, h2, form label, th {
+    text-transform: capitalize;
+}
+
+form div {
+    padding: 8px;
+}
+
+form div + span {
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+}
+
+form div + span.error {
+    color: rgb(184, 1, 1);
+}
+
+form div + span.success {
+    color: rgb(48, 216, 6);
+}
+
+th {
+    padding: 6px 4px;
+}
+
+td {
+    padding: 2px 6px
+}
+
+.modal {
+    align-items: center;
+    background-color: white;
+    display: none;
+    height: 100vh;
+    left: 0;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.created_by {
+    position: fixed;
+    bottom: 14px;
+    right: 16px;
+}

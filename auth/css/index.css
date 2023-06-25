@@ -1,0 +1,53 @@
+/**
+ *   estilo para todo dentro de la carpeta auth
+ *
+ *  aplique poco CSS porque no es el objetivo de este
+ *  proyecto 
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2, form label {
+    text-transform: capitalize;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+form {
+    width: min-content;
+}
+
+form div {
+    padding: 8px;
+}
+
+form input {
+    margin-top: 4px;
+}
+
+form div + span {
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+}
+
+form div + span.error {
+    color: rgb(184, 1, 1);
+}
+
+form div + span.success {
+    color: rgb(48, 216, 6);
+}
+
+.created_by {
+    position: fixed;
+    bottom: 14px;
+    right: 16px;
+}
