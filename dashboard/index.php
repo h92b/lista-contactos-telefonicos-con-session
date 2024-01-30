@@ -2,7 +2,7 @@
 include __DIR__ .('/auth/main.php');
 ?>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-VE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.1">
