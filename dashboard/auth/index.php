@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-VE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.1">
@@ -90,11 +90,10 @@ if ($_GET['actions'] !== 'newContact' && $_GET['actions'] !== 'edit' && $_GET['a
 if (isset($_SESSION['email']) || isset($_GET['email'])) {
 
     function func_valid_email (string $email) {
-        if (preg_match( '/^[^.\)\(\>\<\@\,\;\"\[\]\Ç\&\%][a-zA-Z0-9]|\d|[!#\$%&\'\*\+\-\/=\?\^_`{\|}~]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/' , $email)) {
-            return true;
-        } else {
+        if (!preg_match( '/^[^.\)\(\>\<\@\,\;\"\[\]\Ç\&\%][a-zA-Z0-9]|\d|[!#\$%&\'\*\+\-\/=\?\^_`{\|}~]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/' , $email)) {
             return false;
         }
+        return true;
     }
 
 }
@@ -107,11 +106,10 @@ if (isset($_SESSION['email']) || isset($_GET['email'])) {
 if (isset($_GET['nombre'])) {
 
     function func_valid_name (string $name) {
-        if (preg_match( '/[a-zA-Z\s]{2,25}$/' , $name)) {
-            return true;
-        } else {
+        if (!preg_match( '/[a-zA-Z\s]{2,25}$/' , $name)) {
             return false;
-        }
+        } 
+        return true;
     }
 
 }
@@ -125,10 +123,9 @@ if (isset($_GET['phone'])) {
 
     function func_valid_phone (int $phone) {
         if (preg_match( '/[+0-9]{10,11}$/' , $phone)) {
-            return true;
-        } else {
             return false;
         }
+        return true;
     }
 
 }
